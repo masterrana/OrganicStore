@@ -1,0 +1,102 @@
+<section class="gallery py-lg-4 py-md-3 py-sm-3 py-3" id="gallery">
+    <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+      <h3 class="title text-center mb-2">Gallery </h3>
+      <div class="title-w3ls-text text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">
+      </div>
+      <div class="row gallery-info">
+        <div class="col-lg-4 col-md-6 col-sm-6 gallery-img-grid my-3" *ngFor="let path of allpath">
+          <div class="gallery-grids">
+            <a (click)="showImage1($event)">
+              <img [src]="path" alt="news image" class="img-fluid">
+            </a>
+          </div>
+        </div>
+   <!--      <div class="col-lg-4 col-md-6 col-sm-6 gallery-img-grid my-3">
+          <div class="gallery-grids">
+            <a (click)="showImage1($event)">
+              <img src="assets/images/bb2.jpg" alt="news image" class="img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 gallery-img-grid my-3">
+          <div class="gallery-grids">
+            <a (click)="showImage1($event)">
+              <img src="assets/images/bb3.jpg" alt="news image" class="img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 gallery-img-grid my-3">
+          <div class="gallery-grids">
+            <a (click)="showImage1($event)">
+              <img src="assets/images/g2.jpg" alt="news image" class="img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 gallery-img-grid my-3">
+          <div class="gallery-grids">
+            <a (click)="showImage1($event)">
+              <img src="assets/images/g3.jpg" alt="news image" class="img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 gallery-img-grid my-3">
+          <div class="gallery-grids">
+            <a (click)="showImage1($event)">
+              <img src="assets/images/g4.jpg" alt="news image" class="img-fluid">
+            </a>
+          </div>
+        </div> -->
+      </div>
+      <!-- popup-->
+     <!--  <p-dialog header="Title" [(visible)]="isImage1"> -->
+          
+     <div class="waiting-loader" *ngIf="isImage1">
+        <div class="popup" >
+          <img [src]="path" alt="Popup Image" class="img-fluid">
+          <a class="close" (click)="isImage1=false">×</a>
+        </div>
+      </div>
+   <!--  </p-dialog> -->
+      <!-- //popup -->
+      <!-- popup-->
+      <div id="gal2" class="popup-effect">
+        <div class="popup">
+          <img src="assets/images/bb2.jpg" alt="Popup Image" class="img-fluid">
+          <a class="close" href="#gallery">×</a>
+        </div>
+      </div>
+      <!-- //popup -->
+      <!-- popup-->
+      <div id="gal3" class="popup-effect">
+        <div class="popup">
+          <img src="assets/images/bb3.jpg" alt="Popup Image" class="img-fluid">
+          <a class="close" href="#gallery">×</a>
+        </div>
+      </div>
+      <!-- //popup -->
+      <!-- popup-->
+      <div id="gal4" class="popup-effect">
+        <div class="popup">
+          <img src="assets/images/g2.jpg" alt="Popup Image" class="img-fluid">
+          <a class="close" href="#gallery">×</a>
+        </div>
+      </div>
+      <!-- //popup -->
+      <!-- popup-->
+      <div id="gal5" class="popup-effect">
+        <div class="popup">
+          <img src="assets/images/g3.jpg" alt="Popup Image" class="img-fluid">
+          <a class="close" href="#gallery">×</a>
+        </div>
+      </div>
+      <!-- //popup -->
+      <!-- popup-->
+      <div id="gal6" class="popup-effect">
+        <div class="popup">
+          <img src="assets/images/g4.jpg" alt="Popup Image" class="img-fluid">
+          <a class="close" href="#gallery">×</a>
+        </div>
+      </div>
+      <!-- //popup -->
+    </div>
+  </section>
